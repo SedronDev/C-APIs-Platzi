@@ -11,6 +11,7 @@
           "Microsoft.AspNetCore.OpenApi": "7.0.1",
           "Microsoft.EntityFrameworkCore": "7.0.2",
           "Microsoft.EntityFrameworkCore.InMemory": "7.0.2",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
           "MySql.EntityFrameworkCore": "7.0.0",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
@@ -106,15 +107,15 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/7.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/7.0.2": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.2",
           "Microsoft.Extensions.Configuration.Abstractions": "7.0.0"
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.22.51807"
+            "assemblyVersion": "7.0.2.0",
+            "fileVersion": "7.0.222.58006"
           }
         }
       },
@@ -230,7 +231,7 @@
       "MySql.EntityFrameworkCore/7.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.2",
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
           "MySql.Data": "8.0.32"
         },
         "runtime": {
@@ -508,12 +509,12 @@
       "path": "microsoft.entityframeworkcore.inmemory/7.0.2",
       "hashPath": "microsoft.entityframeworkcore.inmemory.7.0.2.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Relational/7.0.0": {
+    "Microsoft.EntityFrameworkCore.Relational/7.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-eQiYygtR2xZ0Uy7KtiFRHpoEx/U8xNwbNRgu1pEJgSxbJLtg6tDL1y2YcIbSuIRSNEljXIIHq/apEhGm1QL70g==",
-      "path": "microsoft.entityframeworkcore.relational/7.0.0",
-      "hashPath": "microsoft.entityframeworkcore.relational.7.0.0.nupkg.sha512"
+      "sha512": "sha512-TbTGOdaGtjps3GP7rLWXEXzmP+EXhV8AwPE/ov0QYhs5i5vKZX5ZpVLMnco2MeMtiPgLyxE7DhQT8s1wlu190g==",
+      "path": "microsoft.entityframeworkcore.relational/7.0.2",
+      "hashPath": "microsoft.entityframeworkcore.relational.7.0.2.nupkg.sha512"
     },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
       "type": "package",

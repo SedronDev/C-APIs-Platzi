@@ -52,7 +52,7 @@
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[6.0.7, )"
+              "version": "[7.0.2, )"
             },
             "MySql.EntityFrameworkCore": {
               "target": "Package",
