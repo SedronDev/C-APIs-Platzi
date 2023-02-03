@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using webapi.Models;
 namespace APIs_Platzi.Controllers;
 
 
 [ApiController]
+[ValidateNever]
 [Route("[controller]")]
 public class TareaController : ControllerBase {
     ITareaService tareaService;

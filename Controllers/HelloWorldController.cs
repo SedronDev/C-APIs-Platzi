@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using webapi;
 
 namespace APIs_Platzi.Controllers;
 
@@ -9,8 +10,11 @@ public class HelloWorldController : ControllerBase {
     private readonly ILogger<HelloWorldController> _logger;
     IHelloWorldService helloWorldService;
 
-    public HelloWorldController(IHelloWorldService helloWorld, ILogger<HelloWorldController> logger){
+    TareasContext dbContext;
+
+    public HelloWorldController(IHelloWorldService helloWorld, ILogger<HelloWorldController> logger, TareasContext db){
         _logger = logger;
+        dbContext = db;
         helloWorldService = helloWorld;
     }
 
@@ -18,5 +22,14 @@ public class HelloWorldController : ControllerBase {
     public IActionResult Get() {
         _logger.LogInformation("Devolviendo el mensaje de HelloWorld");
         return Ok(helloWorldService.GetHelloWorld());
+    }
+
+    [HttpGet]
+    [Route("createdb")]
+    public IActionResult CreateDatabase()
+    {
+        dbContext.Database.EnsureCreated();
+
+        return Ok();
     }
 }
